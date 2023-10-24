@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/your_database</property>
+        <property name="hibernate.connection.username">your_username</property>
+        <property name="hibernate.connection.password">your_password</property>
+        <property name="hbm2ddl.auto">update</property>
+
+        <mapping class="com.airreserve.Entities.Admin" />
+        <mapping class="com.airreserve.Entities.Client" />
+        <mapping class="com.airreserve.Entities.AirPlane" />
+        <mapping class="com.airreserve.Entities.Company" />
+        <mapping class="com.airreserve.Entities.Flight" />
+        <mapping class="com.airreserve.Entities.FlightExtras" />
+        <mapping class="com.airreserve.Entities.Reservation" />
+        <!-- Other Hibernate properties -->
+    </session-factory>
+</hibernate-configuration>

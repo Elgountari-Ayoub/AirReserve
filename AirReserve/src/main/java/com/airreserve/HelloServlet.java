@@ -1,10 +1,10 @@
-package com.airreserve.airreserve;
+package com.airreserve;
 
 import java.io.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+@WebServlet(name = "helloServlet", value = {"/hello-servlet", ""})
 public class HelloServlet extends HttpServlet {
     private String message;
 
