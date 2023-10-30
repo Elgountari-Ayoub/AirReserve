@@ -22,7 +22,6 @@ public class AirPlane {
     @Column(name = "name")
     private String name;
 
-    // Each airplane can be used for multiple flights
     @OneToMany(mappedBy = "airPlane", cascade = CascadeType.ALL)
     private List<Flight> flights;
 }

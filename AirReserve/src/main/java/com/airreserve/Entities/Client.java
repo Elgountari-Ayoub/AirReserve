@@ -16,7 +16,7 @@ public class Client {
     @Column(name = "code")
     private int code;
 
-    @Column(name = "fistName")
+    @Column(name = "firstName")
     private String firstName;
 
     @Column(name = "lastName")

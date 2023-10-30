@@ -7,10 +7,12 @@
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/your_database</property>
-        <property name="hibernate.connection.username">your_username</property>
-        <property name="hibernate.connection.password">your_password</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/airreserve</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">ESD2023</property>
         <property name="hbm2ddl.auto">update</property>
+
+
 
         <mapping class="com.airreserve.Entities.Admin" />
         <mapping class="com.airreserve.Entities.Client" />
@@ -19,6 +21,7 @@
         <mapping class="com.airreserve.Entities.Flight" />
         <mapping class="com.airreserve.Entities.FlightExtras" />
         <mapping class="com.airreserve.Entities.Reservation" />
+        <mapping class="com.airreserve.Entities.TestEntity" />
         <!-- Other Hibernate properties -->
     </session-factory>
 </hibernate-configuration>

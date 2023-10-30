@@ -3,7 +3,7 @@ package com.airreserve.Entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 @Entity
 @Table(name = "flight")
@@ -26,12 +26,12 @@ public class Flight {
     private String destination;
 
     @Column(name = "departureDate")
-    @Temporal(TemporalType.DATE)
-    private Date departureDate;
+    @Temporal(TemporalType.TIMESTAMP)
+    private LocalDateTime departureDate;
 
     @Column(name = "arrivalDate")
-    @Temporal(TemporalType.DATE)
-    private Date arrivalDate;
+    @Temporal(TemporalType.TIMESTAMP)
+    private LocalDateTime arrivalDate;
 
     @Column(name = "ticketPrice")
     private String ticketPrice;

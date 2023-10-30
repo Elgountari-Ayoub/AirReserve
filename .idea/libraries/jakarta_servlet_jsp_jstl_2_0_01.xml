@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jakarta.servlet.jsp.jstl-2.0.01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../jars/jakarta.servlet.jsp.jstl-2.0.01.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../jars/jakarta.servlet.jsp.jstl-api-2.0.01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
